@@ -5,39 +5,37 @@ namespace UnitTestProject3
 {
     [TestClass]
     public class UnitTest
-    { 
-        //Ensure the test data has Max Number in the First position
-
+    {  // Check Maximum String And Return NIFTY
         [TestMethod]
-        [DataRow(64, 53, 32)]
-        public void Value(int firstValue, int secondValue, int thirdValue)
+        public void CheckFirstString()
         {
-
-            int expectedResult = firstValue;
-            int result = MaxNumbers.MaxIntNumber(firstValue, secondValue, thirdValue);
-            Assert.AreEqual(expectedResult, result);
+            string max = "NIFTY";
+            string Result = MaxNumbers.StringMaximumNumber("NIFTY", "NASDAQ", "SENSEX");
+            Assert.AreEqual(max, Result);
         }
 
-        //Ensure the test data has Max Number in the Second position
-
+        /// <summary>
+         // Check Maximum String And Return  NASDAQ
+        /// </summary>
         [TestMethod]
-        [DataRow(43, 443, 32)]
-        public void Value(int firstValue, int secondValue, int thirdValue)
+        public void CheckSecondString()
         {
-            int expectedResult = secondValue;
-            int result = MaxNumbers.MaxIntNumber(firstValue, secondValue, thirdValue);
-            Assert.AreEqual(expectedResult, result);
+            string max = "NASDAQ";
+            string Result = MaxNumbers.StringMaximumNumber("NIFTY", "NASDAQ", "SENSEX");
+            Assert.AreEqual(max, Result);
         }
 
-
-        //Ensure the test data has Max Number in the Third position
-        [DataRow(33, 53, 93)]
-        public void Value(int firstValue, int secondValue, int thirdValue)
+        /// <summary>
+        /// Check Maximum String And Return  SENSEX
+        /// </summary>
+        [TestMethod]
+        public void CheckThirdString()
         {
-            int expectedResult = thirdValue;
-            int result = MaxNumbers.MaxIntNumber(firstValue, secondValue, thirdValue);
-            Assert.AreEqual(expectedResult, result);
+            string max = "SENSEX";
+            string Result = MaxNumbers.StringMaximumNumber("NIFTY", "NASDAQ", "SENSEX");
+            Assert.AreEqual(max, Result);
         }
-
     }
+
+    
 }
