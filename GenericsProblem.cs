@@ -17,17 +17,21 @@ namespace generics
 
                         return S1;
                     }
-                    if (S2.CompareTo(S1) > 0 && S2.CompareTo(S3) > 0)
+                    else if (S2.CompareTo(S1) > 0 && S2.CompareTo(S3) > 0)
                     {
                         Console.WriteLine("SECOND number is the largest STRING");
                         return S2;
                     }
-                    if (S3.CompareTo(S1) > 0 && S3.CompareTo(S2) > 0)
+                    else if (S3.CompareTo(S1) > 0 && S3.CompareTo(S2) > 0)
                     { 
                       Console.WriteLine("THIRD number is the largest  STRING");
                       return S3;
                     }
-                    throw new Exception("S1,S2,S3 are Same ");
+                    else
+                    {
+                        
+                    Console.writeline("S1,S2,S3 are Same ");
+                    }
                 }
 
              
