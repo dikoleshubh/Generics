@@ -5,10 +5,12 @@ using System.Text;
 namespace generics
 {
     class MaxNumbers
-    {
+    {   
+        //// UC-2 Given 3 flaot find  the maximum
         //// FOLLWOING METHOD WILL RETURN MAXMIMUM NUMBER
 
-        public static int MaxNumber(int firstnumb, int secondnumb, int thirdnumb)
+
+        public static float MaxNumber(float firstnumb, float secondnumb, float thirdnumb)
         {
             if (firstnumb.CompareTo(secondnumb) > 0 && firstnumb.CompareTo(thirdnumb) > 0)
             {
