@@ -9,7 +9,7 @@ namespace UnitTestProject3
         //Ensure the test data has Max Number in the First position
 
         [TestMethod]
-        [DataRow(64, 53, 32)]
+        [DataRow(64.04, 53.0, 32.0)]
         public void Value(int firstValue, int secondValue, int thirdValue)
         {
 
@@ -21,7 +21,7 @@ namespace UnitTestProject3
         //Ensure the test data has Max Number in the Second position
 
         [TestMethod]
-        [DataRow(43, 443, 32)]
+        [DataRow(43.0, 44.3, 3.2)]
         public void Value(int firstValue, int secondValue, int thirdValue)
         {
             int expectedResult = secondValue;
@@ -31,7 +31,7 @@ namespace UnitTestProject3
 
 
         //Ensure the test data has Max Number in the Third position
-        [DataRow(33, 53, 93)]
+        [DataRow(3.3, 5.3, 93.0)]
         public void Value(int firstValue, int secondValue, int thirdValue)
         {
             int expectedResult = thirdValue;
